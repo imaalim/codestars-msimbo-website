@@ -3,34 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="contact-us.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css" integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w==" crossorigin="anonymous"
+    />
+
     <title> Contact Us </title>
+
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <img class="transition h-16 w-1/8" src="images/ulem.1919320d.png" Alt="Urban League of Eastern Massachusetts Banner">
 
-    <h3>Contact Us</h3>
+    <!--  Navbar -->
+    <nav class="navbar navbar-light bg-light-">
+        <div class="container mx-auto">
+            <div class=sm:flex justify-around>
 
-    <div class="container">
+                <!-- Menus -->
+                <ul class="text-gray-400 sm:self-center text-xl border-t sm:border-none
+    navbar-nav mr-auto mt-2 mt-lg-0">
+
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Home</a>
+                    </li>
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Students</a>
+                    </li>
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Curriculum</a>
+                    </li>
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Resources</a>
+                    </li>
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Assignments</a>
+                    </li>
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Slack</a>
+                    </li>
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Videos</a>
+                    </li>
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Contact Us</a>
+                    </li>
+                    <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-red-700">Store</a>
+                </ul>
+
+                <!--Msimbo Logo-->
+                <div class="logo-container"><img class="object-contain object-right-top  h-20 w-20 logo" src="Images/Logo2d.png" alt="msimbo-logo"></div>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+    <!--Contact Us-->
+
+    <h3 class="flex justify-center text-4xl text-red-700 font-bold uppercase px-16 py-16 pb-8">Contact Us
+
+    </h3>
+
+    <div id="error"></div>
+    <form id="form"></form>
+
+    <h4 div class="flex justify-center rounded shadow border-2 border-gray-400 bg-gray-100 px-10 py-10 pb-8 ">
         <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <div class="container flex-auto...">
+                <label for="name" class="font-bold ">Name</label>
+            </div>
+            <input class="rounded border-2 border-red-700 px-28" type="text" id="name" name="name" placeholder="Enter your name..">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <div class="container flex-auto...">
+                <label for="email" class="font-bold">Email</label> </div>
+            <input class="rounded border-2 border-red-700 px-28" type="text" id="email" name="email" placeholder="Enter your email..">
+            </div>
+            <div class="container flex-auto...">
+                <label for="subject" class="font-bold">Subject</label> </div>
+            <input class="rounded border-2 border-red-700 px-28" type="text" id="subject" name="subject" placeholder="Subject..">
 
-            <label for="email">Email Address</label>
-            <input type="text" id="email" name="emailaddress" placeholder="Your email address..">
+            <div class="container flex-auto...">
+                <label for="content" class="font-bold">Content</label> </div>
 
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
+            <textarea id="content" class=" rounded border-2 border-red-700 px-28" name="content" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+            <button class="border-2 border-red-700 bg-gray-200 hover:bg-red-700 ...">
+                Submit
+              </button>
         </form>
-    </div>
-
+    </h4>
 </body>
+
+<footer>
+    <ul>
+        <li class="float-left px-8 hover:bg-gray-200"><a href="contact-us.html"> Contact Us </a></li>
+        <li class="float-left px-8 hover:bg-gray-200"><a href="#"> Follow Us </a></li>
+        <li class="float-right px-8 hover:bg-gray-200"><a href="#"> News & Press </a></li>
+        <li class="float-right px-8 hover:bg-gray-200"><a href="#"> Terms & Privacy
+            </a></li>
+    </ul>
+</footer>
 
 </html>
